@@ -1,0 +1,40 @@
+.container {
+    display: none;
+}
+
+@media only screen and (min-width: 450px) {
+    .container {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .website_title {
+        font-weight: 500;
+        margin: auto;
+    }
+  }
+
+
+@media only screen and (min-width: 820px) {
+    .container {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .website_title {
+        font-weight: 500;
+        margin-right: auto;
+        margin-left: 15%;
+    }
+  }
+
+  
+
+
+  
