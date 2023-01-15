@@ -7,13 +7,15 @@
 @media only screen and (max-width: 449px) {
 	.container {
 		display: grid;
-        grid-template-columns: 1fr;
-        padding: 1rem;
+        grid-template-columns: 80%;
         justify-items: center;
+        margin: auto;
+        margin-top: 1rem;
 	}
 
     .container h3 {
         margin: 0;
+        text-align: center;
     }
 
     .container p {

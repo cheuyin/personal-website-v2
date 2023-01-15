@@ -8,6 +8,7 @@
 
 .container h1 {
 	margin-bottom: 0;
+	text-align: center;
 }
 
 .container .image {
@@ -19,7 +20,7 @@
 
 @media only screen and (max-width: 449px) {
 	.image {
-		width: 50vw;
-		height: 50vw;
+		width: 150px;
+		height: 150px;
 	}
 }
