@@ -1,22 +1,21 @@
 import Layout from "../components/Layout/Layout";
-import Image from "next/image";
-import styles from "../styles/index.module.css";
+import Info from "../components/Info/Info";
+import Profile from "../components/Profile/Profile";
 
 export default function Home() {
 	return (
 		<Layout>
-			<div className={styles.profile}>
-				<Image
-					src="/images/profile-pic-cropped.png"
-					alt="profile pic"
-					width={200}
-					height={200}
-					quality={100}
-					priority
+			<Profile />
+			<section>
+				<Info
+					header="Education"
+					description="The University of British Columbia B.Sc, intended Major in CS"
 				/>
-				<h1>Stanley Cheung</h1>
-				<p>Full-stack developer</p>
-			</div>
+				<Info
+					header="Skills"
+					description="Next.js, TypeScript, Tailwind.css, React, Node.js, Java, Git, MongoDB"
+				/>
+			</section>
 		</Layout>
 	);
 }

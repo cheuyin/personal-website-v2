@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	align-items: center;
+	margin-top: 3rem;
+}
+
+.container h1 {
+	margin-bottom: 0;
+}
+
+.container .image {
+    position: relative;
+	width: 200px;
+    height: 200px;
+}
+
+
+@media only screen and (max-width: 449px) {
+	.image {
+		width: 50vw;
+		height: 50vw;
+	}
+}
