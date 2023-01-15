@@ -1,21 +1,45 @@
 .container {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
-.closed_menu {
-    padding: 1.5rem;
+.container button {
+	border: none;
+	background: none;
 }
 
-.closed_menu button {
-    border: none;
-    background: none;
+.closed_menu button,
+.opened_menu button {
+	margin: 5%;
+	margin-bottom: 4rem;
+}
+
+.opened_menu .nav_links {
+	margin: 0;
+	padding: 0;
+}
+
+.nav_links {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.nav_links li {
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
 }
 
 @media only screen and (min-width: 450px) {
-    .container {
-        display: none;
-    }
-  }
-
-  
+	.container {
+		display: none;
+	}
+}
