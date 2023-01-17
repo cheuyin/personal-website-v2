@@ -2,6 +2,7 @@ import styles from "./MobileNav.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import ContactLinks from "../ContactLinks/ContactLinks";
+import Links from "../Links/Links";
 
 const MobileNav = () => {
 	const [opened, setOpened] = useState(true);
@@ -22,12 +23,7 @@ const MobileNav = () => {
 							height={36}
 						/>
 					</button>
-					<ul className={styles.nav_links}>
-						<li>About Me</li>
-						<li>Projects</li>
-						<li>Blog</li>
-						<li>Resume</li>
-					</ul>
+					<Links />
 					<div className={styles.links}>
 						<ContactLinks />
 					</div>

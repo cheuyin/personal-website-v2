@@ -1,6 +1,6 @@
 import ContactIcons from "../ContactLinks/ContactLinks";
 import styles from "./NavBar.module.css";
-import Links from "./Links/Links";
+import Links from "../Links/Links";
 
 const NavBar = () => {
 	return (

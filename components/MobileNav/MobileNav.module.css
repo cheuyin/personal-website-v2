@@ -22,25 +22,7 @@
 	z-index: 1;
 }
 
-.opened_menu .nav_links {
-	margin: 0;
-	padding: 0;
-}
-
-.nav_links {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-}
-
-.nav_links li {
-	margin-bottom: 2rem;
-	font-size: 2rem;
-	font-weight: 600;
-}
-
-.links {
+.container .links {
 	display: flex;
 	justify-content: center;
 	margin-top: 3rem;
