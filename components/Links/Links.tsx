@@ -1,23 +1,43 @@
 import styles from "./Links.module.css";
-import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-const Links = () => {
-	const [selected, setSelected] = useState(false);
+const navigationRoutes = ["home", "projects", "blog", "resume"];
 
-	function toggleSelected(event: any) {
-		console.log(event.target.className)
-		event.target.className += styles.selected;
-	}
-
+export default function Links() {
+	const router = useRouter();
 	return (
-		<ul className={styles.container}>
-			<li className={styles.selected}><Link href="/">About Me</Link></li>
-			<li onClick={toggleSelected} className={styles.selected}><Link href="/projects">Projects</Link></li>
-			<li onClick={toggleSelected}><Link href="/blog">Blog</Link></li>
-			<li onClick={toggleSelected}><Link href="/resume">Resume</Link></li>
-		</ul>
+		<nav className={styles.container}>
+			{navigationRoutes.map((singleRoute) => {
+				return (
+					<NavigationLink
+						key={singleRoute}
+						href={`/${singleRoute}`}
+						text={singleRoute}
+						router={router}
+					/>
+				);
+			})}
+		</nav>
 	);
-};
+}
 
-export default Links;
+function NavigationLink({
+	href,
+	text,
+	router,
+}: {
+	href: string;
+	text: string;
+	router: any;
+}) {
+	const isActive = router.asPath === (href === "/home" ? "/" : href);
+	return (
+		<Link
+			href={href === "/home" ? "/" : href}
+			className={`${isActive && styles.nav_item_active} ${styles.nav_item}`}
+		>
+			{text.charAt(0).toUpperCase() + text.slice(1)}
+		</Link>
+	);
+}

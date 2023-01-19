@@ -10,14 +10,14 @@
     margin: auto;
 }
 
-.container li {
+.container .nav_item {
     font-weight: 500;
     padding: 10px;
     border-radius: 9999px;
     min-width: max-content;
 }
 
-.container .selected {
+.container .nav_item_active {
     background-color: white;
 }
 
@@ -33,13 +33,13 @@
         list-style: none;
     }
     
-    .container li {
+    .container .nav_item {
         margin-bottom: 2rem;
         font-size: 2rem;
         font-weight: 600;
     }
 
-    .container .selected {
+    .container .nav_item_active {
         background-color: black;
         color: white;
         padding: 1rem;
