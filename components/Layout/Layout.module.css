@@ -1,4 +1,20 @@
+.layout_container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .main_container {
     max-width: 32rem;
     margin: auto;
+    padding-bottom: 2.5rem;
+}
+
+.footer {
+    font-weight: 200;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: black;
+    color: white;
+    margin-top: auto;
 }
