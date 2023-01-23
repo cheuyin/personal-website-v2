@@ -1,6 +1,7 @@
 .container {
     display: none;
     user-select: none;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 450px) {

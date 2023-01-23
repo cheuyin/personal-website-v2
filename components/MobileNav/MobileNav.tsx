@@ -5,7 +5,7 @@ import ContactLinks from "../ContactLinks/ContactLinks";
 import Links from "../Links/Links";
 
 const MobileNav = () => {
-	const [opened, setOpened] = useState(true);
+	const [opened, setOpened] = useState(false);
 
 	function toggleMenu() {
 		setOpened((prev) => !prev);
