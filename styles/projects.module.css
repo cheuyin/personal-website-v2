@@ -1,5 +1,62 @@
-.placeholder {
-    font-weight: 600;
-    font-size: 1.5rem;
-    padding: 3rem;
+.container {
+    display: grid;
+    grid-template-columns: fit-content(600px) fit-content(600px);
+    width: max-content;
+    margin: auto;
+    padding: 1rem;
+    justify-items: center;
+    column-gap: 5rem;
+    margin-top: 2rem;
+}
+
+.image_container {
+    position: relative;
+    width: 500px;
+    height: 281px;
+}
+
+.project_card {
+    margin-bottom: 3rem;
+}
+
+.horizontal_bar h2 {
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.horizontal_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.description {
+    opacity: 60%;
+}
+
+.skills {
+    font-size: 0.7rem;
+    word-spacing: 1rem;
+    opacity: 50%;
+}
+
+@media only screen and (max-width: 400px) {
+    .image_container {
+        width: 200px;
+        height: 113px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .image_container {
+        width: 300px;
+        height: 169px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+	.container {
+        grid-template-columns: 1fr;
+	}
 }
