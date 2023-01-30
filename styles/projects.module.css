@@ -1,14 +1,22 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: fit-content(600px) fit-content(600px);
+    width: max-content;
+    margin: auto;
     padding: 1rem;
     justify-items: center;
-    gap: 0px;
+    column-gap: 5rem;
     margin-top: 2rem;
 }
 
+.image_container {
+    position: relative;
+    width: 500px;
+    height: 281px;
+}
+
 .project_card {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .horizontal_bar h2 {
@@ -33,7 +41,21 @@
     opacity: 50%;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 400px) {
+    .image_container {
+        width: 200px;
+        height: 113px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .image_container {
+        width: 300px;
+        height: 169px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
 	.container {
         grid-template-columns: 1fr;
 	}
