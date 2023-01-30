@@ -4,12 +4,6 @@
     flex-direction: column;
 }
 
-.main_container {
-    max-width: 32rem;
-    margin: auto;
-    padding-bottom: 2.5rem;
-}
-
 .footer {
     font-weight: 200;
     text-align: center;

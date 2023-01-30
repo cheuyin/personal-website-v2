@@ -20,9 +20,20 @@ const Projects = ({ projects }: { projects: Projects }) => {
 			<div className={styles.container}>
 				{projects.map((project: Project) => (
 					<div key={project.id} className={styles.project_card}>
-						<Image src={project.image} width={30} height={30} alt="" />
-						<p>{project.name}</p>
-						<p>{project.description}</p>
+						<Image src={project.image} width={500} height={281} alt="project image" />
+						<div className={styles.horizontal_bar}>
+							<h2>{project.name}</h2>
+							<a rel="noreferrer" target="_blank" href={project.gitHubLink}>
+								<Image
+									src="/icons/github-icon.svg"
+									alt="github icon"
+									width={30}
+									height={30}
+								/>
+							</a>
+						</div>
+						<p className={styles.description}>{project.description}</p>
+						<p className={styles.skills}>{project.skills.join(" ")}</p>
 					</div>
 				))}
 			</div>
