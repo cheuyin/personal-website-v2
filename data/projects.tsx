@@ -1,31 +1,22 @@
 import node_films from "../public/project_images/node_films.png";
-import etch_sketch from "../public/project_images/etch_sketch.png";
-import demo_img from "../public/project_images/demo-img.png";
+import smart_foods from "../public/project_images/smart_foods.png";
 
 const projects = [
 	{
+		id: 1,
+		name: "Smart Foods",
+		image: smart_foods,
+		skills: ["Next.js", "React"],
+		description: "nwHacks project for finding the best food prices",
+		gitHubLink: "https://github.com/nwHacks2023-smart-food/smart-foods",
+	},
+	{
 		id: 2,
-		name: "Etch-a-Sketch",
-		image: etch_sketch,
-		skills: ["JavaScript", "HTML", "CSS"],
-		description: "Online tool for making quick, fun sketches",
-		gitHubLink: "https://github.com/cheuyin/etch-a-sketch",
-	},
-	{
-		id: 3,
-		name: "Etch-a-Sketch",
-		image: demo_img,
-		skills: ["JavaScript", "HTML", "CSS"],
-		description: "Online tool for making quick, fun sketches",
-		gitHubLink: "https://github.com/cheuyin/etch-a-sketch",
-	},
-	{
-		id: 4,
-		name: "Etch-a-Sketch",
-		image: etch_sketch,
-		skills: ["JavaScript", "HTML", "CSS"],
-		description: "Online tool for making quick, fun sketches",
-		gitHubLink: "https://github.com/cheuyin/etch-a-sketch",
+		name: "Node Films",
+		image: node_films,
+		skills: ["Node.js", "Rest API", "Promises"],
+		description: "Data retriever for all your favorite movies",
+		gitHubLink: "https://github.com/cheuyin/node-films",
 	},
 ];
 
