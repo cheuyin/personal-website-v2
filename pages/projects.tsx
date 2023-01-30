@@ -23,11 +23,10 @@ const Projects = ({ projects }: { projects: Projects }) => {
 						<div className={styles.image_container}>
 							<Image
 								src={project.image}
-								fill
-								quality={100}
 								alt="project image"
-								priority
 								placeholder="blur"
+								priority
+								style={{ width: "100%", height: "30%" }}
 							/>
 						</div>
 						<div className={styles.horizontal_bar}>
