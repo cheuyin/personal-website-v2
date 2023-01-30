@@ -1,5 +1,39 @@
-.placeholder {
-    font-weight: 600;
-    font-size: 1.5rem;
-    padding: 3rem;
+.pdf {
+	display: block;
+	width: 800px;
+	height: 100vh;
+	margin: auto;
+	margin-bottom: 3rem;
+}
+
+.resume_link {
+    display: block;
+    width: 100%;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 20%;
+    color: #0047ab;
+}
+
+.alternative {
+    display: none;
+}
+
+
+@media only screen and (max-width: 450px) {
+	.pdf {
+        display: none;
+	}
+
+    .alternative {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+	.pdf {
+		width: 400px;
+	}
 }

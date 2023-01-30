@@ -4,7 +4,24 @@ import styles from "../styles/resume.module.css";
 const Resume = () => {
 	return (
 		<Layout>
-			<p className={styles.placeholder}>Resume coming soon!</p>
+			<object className={styles.pdf} data="/resume.pdf" type="application/pdf">
+				<a
+					href="/resume.pdf"
+					target="_blank"
+					rel="noreferrer"
+					className={styles.resume_link}
+				>
+					DOWNLOAD
+				</a>
+			</object>
+			<a
+				href="/resume.pdf"
+				target="_blank"
+				rel="noreferrer"
+				className={`${styles.resume_link} ${styles.alternative}`}
+			>
+				DOWNLOAD
+			</a>
 		</Layout>
 	);
 };
