@@ -2,7 +2,7 @@ import styles from "./Links.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const navigationRoutes = ["home", "projects", "blog", "resume"];
+const navigationRoutes = ["home", "projects", "resume"];
 
 export default function Links() {
 	const router = useRouter();
