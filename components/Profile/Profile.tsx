@@ -1,5 +1,6 @@
 import styles from "./Profile.module.css";
 import Image from "next/image";
+import PersonalDescription from "./PersonalDescription/PersonalDescription.js";
 
 const Profile = () => {
 	return (
@@ -14,7 +15,7 @@ const Profile = () => {
 				/>
 			</div>
 			<h1>Stanley Cheung</h1>
-			<p>Full-stack developer</p>
+			<PersonalDescription />
 		</div>
 	);
 };
