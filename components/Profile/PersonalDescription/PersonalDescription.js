@@ -10,13 +10,13 @@ const PersonalDescription = () => {
 	React.useEffect(() => {
 		const options = {
 			strings: [
-				"Full-stack developer",
-				"Computer science student",
-				"AP Calculus and AP Computer Science tutor",
-				"Self-learner",
+				"Software engineer",
+				"UBC B.Sc CS student",
+				"AP Calc. &amp; AP CSA tutor",
 			],
 			typeSpeed: 50,
 			backSpeed: 50,
+			loop: true
 		};
 
 		// elRef refers to the <span> rendered below
