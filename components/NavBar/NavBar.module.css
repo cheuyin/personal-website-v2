@@ -4,6 +4,11 @@
     margin-bottom: 2rem;
 }
 
+.website_title {
+    font-weight: 500;
+    opacity: 30%;
+}
+
 @media only screen and (min-width: 450px) {
     .container {
         margin-top: 3rem;
@@ -14,7 +19,6 @@
     }
 
     .website_title {
-        font-weight: 500;
         margin: auto;
     }
   }
@@ -30,7 +34,6 @@
     }
 
     .website_title {
-        font-weight: 500;
         margin-right: auto;
         margin-left: 15%;
     }
