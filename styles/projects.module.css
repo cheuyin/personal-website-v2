@@ -1,51 +1,60 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr; 
-    margin: 1rem auto 2rem auto;
-    column-gap: 4rem;
-    row-gap: 3rem;
-    padding: 2rem;
-    justify-items: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 1rem auto 2rem auto;
+	column-gap: 8rem;
+	row-gap: 3rem;
+	padding: 2rem;
+	justify-items: center;
 }
 
 .project_card {
-    width: 100%;
+	width: 100%;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+	transition: all 0.05s ease-in-out;
+	cursor: pointer;
+	color: #505050;
+}
+
+.project_card:hover {
+	transform: scale(1.05);
 }
 
 .image_container {
-    width: 100%;
+	width: 100%;
 }
 
 .horizontal_bar h2 {
-    font-size: 1.7rem;
-    margin: 0;
+	font-size: 1.7rem;
+	margin: 0;
 }
 
 .horizontal_bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1rem;
 }
 
 .description {
-    opacity: 60%;
+	opacity: 60%;
 }
 
 .skills {
-    font-size: 0.7rem;
-    word-spacing: 1rem;
-    opacity: 50%;
+	font-size: 0.7rem;
+	word-spacing: 1rem;
+	opacity: 50%;
 }
 
 @media only screen and (min-width: 450px) {
-    .container {
-        width: 80%;
-    }
+	.container {
+		width: 80%;
+	}
 }
 
 @media only screen and (min-width: 820px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-    }
+	.container {
+		grid-template-columns: 1fr 1fr;
+	}
 }
