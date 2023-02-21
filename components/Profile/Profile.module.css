@@ -3,6 +3,7 @@
 	flex-direction: column;
 	margin: auto;
 	align-items: center;
+	margin-bottom: 3rem;
 }
 
 .container h1 {

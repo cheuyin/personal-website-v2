@@ -6,37 +6,51 @@ const SkillsTable = () => {
 		<div className={styles.container}>
 			<div className={styles.skill_box}>
 				<p>Java</p>
-				<ProgressBar percent={30} />
+				<ProgressBar percent={75} />
 			</div>
 			<div className={styles.skill_box}>
-				<p>Java</p>
+				<p>React</p>
+                <ProgressBar percent={70} />
 			</div>
 			<div className={styles.skill_box}>
-				<p>Java</p>
+				<p>Next.js</p>
+                <ProgressBar percent={75} />
 			</div>
 			<div className={styles.skill_box}>
-				<p>Java</p>
+				<p>Tailwind</p>
+                <ProgressBar percent={80} />
 			</div>
 			<div className={styles.skill_box}>
-				<p>Java</p>
+				<p>Python</p>
+                <ProgressBar percent={50} />
 			</div>
 			<div className={styles.skill_box}>
-				<p>Java</p>
+				<p>Git/GitHub</p>
+                <ProgressBar percent={80} />
 			</div>
 			<div className={styles.skill_box}>
-				<p>Java</p>
+				<p>Figma</p>
+                <ProgressBar percent={90} />
 			</div>
 			<div className={styles.skill_box}>
-				<p>Java</p>
+				<p>JavaScript</p>
+                <ProgressBar percent={90} />
 			</div>
 			<div className={styles.skill_box}>
-				<p>Java</p>
+				<p>HTML</p>
+                <ProgressBar percent={90} />
 			</div>
 			<div className={styles.skill_box}>
-				<p>Java</p>
+				<p>CSS</p>
+                <ProgressBar percent={90} />
 			</div>
-			<div className={styles.skill_box}>
-				<p>Java</p>
+            <div className={styles.skill_box}>
+				<p>TypeScript</p>
+                <ProgressBar percent={50} />
+			</div>
+            <div className={styles.skill_box}>
+				<p>MongoDB</p>
+                <ProgressBar percent={40} />
 			</div>
 		</div>
 	);

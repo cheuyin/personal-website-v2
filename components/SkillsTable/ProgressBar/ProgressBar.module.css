@@ -4,7 +4,7 @@
 }
 
 .progress {
-    background-color: rgb(62, 122, 235);
+    background-color: #06FF00;
     height: 0.8rem;
     border-radius: 1rem;
     transition: 1s ease;
