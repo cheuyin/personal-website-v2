@@ -21,6 +21,6 @@
 		"**/*.tsx",
 		"components/Profile/PersonalDescription/PersonalDescription.js",
 		"components/Timeline/Timeline.js"
-	],
+, "components/SkillsTable/ProgressBar/ProgressBar.js"	],
 	"exclude": ["node_modules"]
 }
