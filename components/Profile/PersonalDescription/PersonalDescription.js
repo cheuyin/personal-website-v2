@@ -10,7 +10,8 @@ const PersonalDescription = () => {
 	React.useEffect(() => {
 		const options = {
 			strings: [
-				"Software engineer",
+				"Full-stack developer",
+				"Problem solver",
 				"UBC B.Sc CS student",
 				"AP Calc. &amp; AP CSA tutor",
 			],
