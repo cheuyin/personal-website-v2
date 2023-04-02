@@ -18,7 +18,7 @@ const Projects = ({ projects }: { projects: Projects }) => {
 	return (
 		<Layout>
 			<div className={styles.container}>
-				{projects.map((project: Project) => (
+				{projects.reverse().map((project: Project) => (
 					<a
 						key={project.id}
 						className={styles.project_card}
