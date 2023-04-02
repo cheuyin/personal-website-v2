@@ -9,22 +9,28 @@ interface Project {
 	image: string;
 	skills: string[];
 	description: string;
-	gitHubLink: string;
+	link: string;
 }
 
 type Projects = Project[];
 
 const Projects = ({ projects }: { projects: Projects }) => {
+	// Reverse ordering of projects array
+	const reversedProjectsList = [];
+	for (let i = projects.length - 1; i >= 0; i--) {
+		reversedProjectsList.push(projects[i]);
+	}
+
 	return (
 		<Layout>
 			<div className={styles.container}>
-				{projects.reverse().map((project: Project) => (
+				{reversedProjectsList.map((project: Project) => (
 					<a
 						key={project.id}
 						className={styles.project_card}
 						target="_blank"
 						rel="noopener noreferrer"
-						href={project.gitHubLink}
+						href={project.link}
 					>
 						<div className={styles.image_container}>
 							<Image
