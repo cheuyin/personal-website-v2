@@ -4,7 +4,7 @@ import styles from "../styles/resume.module.css";
 const Resume = () => {
 	return (
 		<Layout>
-			<object className={styles.pdf} data="/Stanley_Cheung_Resume..pdf" type="application/pdf">
+			<object className={styles.pdf} data="/Stanley_Cheung_Resume.pdf" type="application/pdf">
 				<a
 					href="/resume.pdf"
 					target="_blank"

@@ -25,7 +25,7 @@ const projects = [
 		image: pca,
 		skills: ["React", "Tailwind"],
 		description: "Main website for PCA 2023",
-		link: "https://pca2023.com/"
+		link: "https://pca2023.com"
 	}
 ];
 
