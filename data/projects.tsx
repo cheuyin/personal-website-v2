@@ -1,6 +1,7 @@
 import node_films from "../public/project_images/node_films.png";
 import smart_foods from "../public/project_images/smart_foods.png";
 import pca from "../public/project_images/pca.png";
+import two_chess from "../public/project_images/two_chess.png";
 
 const projects = [
 	{
@@ -26,6 +27,14 @@ const projects = [
 		skills: ["React", "Tailwind"],
 		description: "Main website for PCA 2023",
 		link: "https://pca2023.com"
+	},
+	{
+		id: 4,
+		name: "TwoChess",
+		image: two_chess,
+		skills: ["Java", "JUnit5", "Java Swing", "OOD"],
+		description: "Chess game reimplemented in Java",
+		link: "https://github.com/cheuyin/two-chess"
 	}
 ];
 

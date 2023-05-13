@@ -38,7 +38,7 @@ const Projects = ({ projects }: { projects: Projects }) => {
 								alt="project image"
 								placeholder="blur"
 								priority
-								style={{ width: "100%", height: "30%" }}
+								style={{ width: "100%", height: 300, objectFit: "contain" }}
 							/>
 						</div>
 						<div className={styles.horizontal_bar}>
